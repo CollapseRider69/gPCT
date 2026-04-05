@@ -1,0 +1,43 @@
+# ====================
+# LaTeX build artifacts
+# ====================
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.nav
+*.snm
+*.vrb
+*.pdfsync
+*.dvi
+*.ps
+
+# ====================
+# Editor & OS junk
+# ====================
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ====================
+# Temporary files
+# ====================
+*.tmp
+*.temp
+
+# ====================
+# IMPORTANT: Do NOT ignore the seed files
+# ====================
+# !gPCT.tex
+# !gPCT.pdf
+# !gPCT_CHSH_W_curve.png
+# !README.md
