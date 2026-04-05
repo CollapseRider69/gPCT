@@ -2,9 +2,9 @@
 
 **3-page core paper** (v2025-10) — the exact document used in all derivations.
 
-- [PDF](gPCT.pdf)
-- [LaTeX source](gPCT.tex) — fully compilable
-- [DOI](https://doi.org/10.5281/zenodo.17266831)
+- **[PDF](gPCT.pdf)**
+- **[LaTeX source](gPCT.tex)** — fully compilable (just run `pdflatex gPCT.tex`)
+- **[DOI](https://doi.org/10.5281/zenodo.17266831)**
 
 This is the canonical minimal statement: three postulates, one recursion constraint, one hinge, and the RDP. No patches.
 
