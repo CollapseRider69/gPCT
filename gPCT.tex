@@ -1,0 +1,172 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage[margin=1in]{geometry}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\titleformat{\section}{\large\bfseries}{}{0pt}{}
+\usepackage{setspace}
+\pagestyle{empty}
+\setstretch{1.02}
+
+\begin{document}
+\begin{center}
+    {\LARGE \textbf{Slope Traversal and Time}}\\[0.4em]
+    \vspace{0.4em}
+    {\large \textit{A Minimal Statement of Gravitational Phase-Cancellation Theory (gPCT)}}
+\\[0.9em]
+    Christopher Dean White\\
+    \href{https://orcid.org/0009-0002-7866-7078}{ORCID: 0009-0002-7866-7078}\\
+    \copyright~2025 \; CC BY 4.0 License\\
+\end{center}
+
+\section*{Notation}
+
+\begin{tabular}{@{}lll@{}}
+\vspace{0.4em}
+$u^\mu$       & $=$          & $\dfrac{dx^\mu}{d\tau}$ \qquad (four-velocity) \\[4pt]
+$a^\mu$       & $=$          & $u^\nu \nabla_\nu u^\mu$ \qquad (four-acceleration) \\[4pt]
+$D$           & $\coloneqq$  & $u^\mu \nabla_\mu$ \quad (derivative along a worldline) \\[4pt]
+$\phi_g$      & $\coloneqq$  & gravitational phase (see below) \\[4pt]
+
+$s$           & $\coloneqq$  & $D\phi_g$ \quad (local gravitational-phase slope) \\[4pt]
+$G$           & $\coloneqq$  & weak-field gravitational amplitude (scalar curvature proxy)
+\end{tabular}
+
+\vspace{0.4em}
+\noindent The gravitational phase is defined exactly as
+\[
+\phi_g \coloneqq \tfrac{1}{2}\ln(-g_{00}),
+\]
+which is dimensionless and purely relational (depending only on the ratio $2M/r$ in the Schwarzschild case). In the weak-field limit $\phi_g \approx \Phi/c^2$, with $\Phi$ the Newtonian potential; however, this approximation introduces absolute scale and should not be used when evaluating $\mathcal{H}$. The slope is then $s = D\phi_g$, which in the cosmological context equals the local Hubble parameter $H(\tau)$ along the worldline.
+
+\vspace{0.5em}
+\section*{Postulate I — Slope Memory}
+
+\[
+\sigma(\tau) \coloneqq s(\tau) = D\phi_g,
+\qquad
+\Sigma[\gamma] = \int_\gamma \sigma \, d\tau
+\]
+
+\noindent
+Clocks accumulate signed slope memory; cancellation occurs only under slope-symmetric traversal of a complete gravitational-phase cycle.
+
+\vspace{0.4em}
+\section*{Postulate II — Dual Recursion}
+
+Let $s \coloneqq D\phi_g$. Then curvature and time resolve from slope:
+
+\[
+DG = s,\quad D_\tau t = f(s),
+\]
+
+\newpage
+
+and co-determine one another through the recursion constraint
+
+\[
+D(G\,Dt) = t\,DG,
+\]
+
+with recursion scalar
+
+\[
+\mathcal{H} = \frac{DG}{-G D^2 G - (DG)^2}
+\]
+
+\vspace{0.8em}
+\section*{Postulate III — White Equation (Phase Normalization)}
+
+\[
+\mathcal{H}\,\xrightarrow[\text{asymptotic}]{} -\frac{1}{2\pi}
+\]
+
+\noindent
+When $s(\tau) \to s_\infty$ (finite, nonzero) as $\tau\to\infty$, the dual recursion 
+forces $G(\tau) \to s_\infty\tau + C$ (asymptotically linear), $D^2G \to 0$, and therefore
+\[
+\mathcal{H} \;\longrightarrow\; \frac{s_\infty}{-s_\infty^2} = -\frac{1}{s_\infty}
+\]
+The condition $\mathcal{H} = -1/2\pi$ is then equivalent to $s_\infty = 2\pi$, which is 
+the statement that $\phi_g$ is measured in radians and the winding number per phase cycle 
+is unity. It selects $s_\infty = 2\pi$ as the natural unit normalization of the 
+gravitational phase. The asymptotic condition $\mathcal{H} = -1/2\pi$ also uniquely 
+determines $f(s)$ in Postulate II given the recursion constraint.
+
+\vspace{0.8em}
+\noindent\textbf{Slope Domain.}
+\begin{equation*}
+p = \mathrm{normalize}(D\phi_g), \qquad p \in [-1,1],
+\end{equation*}
+\begin{equation*}
+\hat{s} = 2|p|, \qquad \hat{s} \in [0,2],
+\end{equation*}
+{where $\mathrm{normalize}(\cdot)$ maps the signed phase slope over one complete phase cycle to $[-1,1]$, and $\hat{s}$ denotes the normalized slope (distinct from the raw slope $s = D\phi_g$).}
+
+\vspace{1.0em}
+\textit{The absolute value folds the cycle, so phase parity is retained through the partition $\hat{s}<1$ and $\hat{s}>1$.}
+\vspace{.8em}
+
+\vspace{1.0em}
+\noindent\textbf{Prediction} (slope-modulated collapse).
+\[
+P(\lvert 1 \rangle) = \cos^{2}\!\left(\frac{\pi \hat{s}}{2} - \frac{\pi}{4}\right)
+\]
+
+\vspace{0.6em}
+\textit{This expression is not postulated from the Born rule. Here the $\cos^{2}$ law follows from slope recursion (Postulate II); collapse outcomes are parametrized by normalized gravitational phase slope $\hat{s}$. Standard QM predicts no relational dependence on worldline slope between frames.}
+
+\newpage
+
+\vspace{0.8em}
+
+\vspace{0.6em}
+
+\textbf{Relational Decoherence Principle (RDP).}  
+Gravitational phase slope $s = D\phi_g$ is defined along a worldline, and time itself resolves recursively from slope (Postulate II). Local measurement statistics therefore reproduce Born expectations in every slope-conditioned frame. No local deviation from standard quantum predictions occurs. The only physically observable difference between spacetime-separated frames sampling different slope histories is accumulated proper time along distinct worldlines. Global statistical neutrality remains preserved over complete phase cycles. In the incomplete-traversal limit, the resolved worldline geometry 
+recovers the four-acceleration $a^\mu = u^\nu\nabla_\nu u^\mu$ of 
+general relativity; complete traversal recovers the geodesic.
+
+\section*{Corollary — Temporal Balance}
+
+\[
+\oint_\gamma \sigma \, d\tau = 0
+\qquad
+\text{for closed worldlines or complete phase cycles.}
+\]
+
+\vspace{0.5em}
+\textit{This describes a cyclic, self-referential universe in which local asymmetries sum to global neutrality. Such neutrality constrains observability to relational comparisons across incomplete traversals.}
+
+\vspace{0.7em}
+\section*{Corollary — Phase Gradient Requirement}
+
+\noindent The framework requires a nonzero asymptotic phase gradient. 
+If $s(\tau) \to 0$ — as in a slope field decelerating asymptotically 
+to a halt — then $G(\tau)$ grows sub-linearly, $\mathcal{H}$ diverges, 
+and Postulate III cannot be satisfied. Concretely:
+\[
+s_\infty = 0 \;\Longrightarrow\; \mathcal{H} \to \infty 
+\qquad \text{(framework breakdown).}
+\]
+A sustained nonzero asymptotic slope ($s_\infty \neq 0$) is therefore 
+a necessary condition for internal consistency. The attractor 
+$s_\infty = 2\pi$ (in natural units) is the natural fixed point 
+satisfying both the recursion constraint and the phase normalization 
+of Postulate III.
+
+\vspace{0.7em}
+\section*{Arrow of Time}
+
+Because the gravitational phase $\phi_g$ evolves monotonically along an observer’s worldline, slope-dependent collapse modulation inherits an intrinsic direction. Although signed slope memory phase-cancels globally and preserves statistical neutrality, the sequence of local asymmetries is not symmetric under reversal of proper time. In gPCT, temporal asymmetry requires no entropy gradients, decoherence, or boundary conditions; it follows directly from directional traversal of gravitational-phase slope.
+\vspace{0.7em}
+
+\section*{Primitive and Constraint}
+
+\[
+{\text{Primitive: } s(\tau)}
+\qquad
+{\text{Constraint: } \mathcal{G}[s] = \mathcal{T}[s]}
+\]
+
+\end{document}
